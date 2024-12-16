@@ -10,13 +10,33 @@
 
 <p>{{idade + 1}}</p>
 
-
 <hr>
+
+
 <h2>Property Binding</h2>
 
 <button [disabled] ="checkedDisabled">Botão</button>
 <img [src] = "imgSrc" alt="Moto Eletrica">
 
-
+<br><br><br>
 <hr>
+
+
 <h2>Event Binding</h2> 
+
+ <button (click) = "alertaInfo($event)">Evento</button> 
+ <br><br>
+ <div (mousemove) = "mouseMoveTest($event)" style="height: 300px; width: 300px; background-color: aqua;"></div>
+ {{position.x}} - {{position.y}}
+
+ <br><br>
+ <hr>
+
+
+ <h2>Two Way Binding</h2>
+
+<input [(ngModel)]="nome">
+ {{nome}}
+
+
+
