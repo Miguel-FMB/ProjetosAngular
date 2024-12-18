@@ -1,2 +1,22 @@
+<hr>
+<h2>IF</h2>
+<p *ngIf="condition; else elseBlock">True</p>>
 
- <p>diretivas-estruturais works!</p>
+<ng-template #elseBlock>
+    <p>False</p>
+</ng-template>
+
+
+<p *ngIf="clickCondition">True</p>
+<p *ngIf="!clickCondition">False</p>
+
+<button (click)= "onClick()">Clicar</button>  
+
+<hr>
+<h2>FOR</h2>
+<ul>
+    <li *ngFor="let item of list, let i  = index" (click)="onClickEvent(i)">[ {{i + 1}} ]  {{item.nome}} - {{item.idade}} anos</li>
+</ul>
+
+<button (click)= "onClickAdd()">Adicionar</button> 
+
