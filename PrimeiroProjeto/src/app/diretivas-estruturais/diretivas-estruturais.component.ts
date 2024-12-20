@@ -15,6 +15,8 @@ export class DiretivasEstruturaisComponent implements OnInit {
     {nome: "Felipe Barbugian", idade: 20},
     {nome: "Miguel Bastos", idade: 19}
   ];
+  //switch
+  public nome: string= "";
 
 
   constructor() { }
@@ -37,7 +39,8 @@ export class DiretivasEstruturaisComponent implements OnInit {
       this.clickCondition = true;
     }
   }
-
+  
+  //for
   public onClickAdd(){
     this.list.push ({nome: "Lucas Alves", idade: 21})
   }

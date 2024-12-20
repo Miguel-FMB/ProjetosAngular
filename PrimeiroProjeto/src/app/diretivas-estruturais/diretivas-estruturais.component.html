@@ -20,3 +20,22 @@
 
 <button (click)= "onClickAdd()">Adicionar</button> 
 
+<hr>
+<h2>Switch</h2>
+
+<input type="text" [(ngModel)] = "nome">
+
+<div [ngSwitch]="nome">
+    <p *ngSwitchCase="'Miguel'">
+        Miguel
+    </p>
+
+    <p *ngSwitchCase="'Pedro'">
+        Pedro
+    </p>
+
+    <p *ngSwitchDefault>
+        Resultado não encontrado
+    </p>
+</div>
+
