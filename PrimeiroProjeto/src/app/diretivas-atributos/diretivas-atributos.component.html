@@ -1,0 +1,31 @@
+<ng-content select="h1"></ng-content>
+
+<hr>
+<h2>ngClass</h2>
+<p [ngClass]="{'active': valor, 'disabled': !valor}">NgClass </p>
+
+<hr>
+<h2>ngModel</h2>
+
+<input [(ngModel)]="nome">
+<button (click)="salvar()">Salvar</button>
+
+<li *ngFor="let item of list">{{item.nome}}</li>
+
+<hr>
+<h2>ng-template</h2>
+
+<ng-template ngFor let-item [ngForOf]="list">
+    <p>
+        {{item.nome}}
+    </p>
+</ng-template>
+
+<input [(ngModel)]="nome">
+<button (click)="salvar()">Salvar</button>
+
+<ng-content select="hr"></ng-content>
+
+<h2>Pipe</h2>
+<p>Sem pipe = {{date}}</p>
+<p>Com pipe = {{date | date: 'dd/mm/yyyy'}}</p>

@@ -1,5 +1,5 @@
 <hr>
-<h2>IF</h2>
+<h2>ngIf</h2>
 <p *ngIf="condition; else elseBlock">True</p>>
 
 <ng-template #elseBlock>
@@ -13,7 +13,7 @@
 <button (click)= "onClick()">Clicar</button>  
 
 <hr>
-<h2>FOR</h2>
+<h2>ngFor</h2>
 <ul>
     <li *ngFor="let item of list, let i  = index" (click)="onClickEvent(i)">[ {{i + 1}} ]  {{item.nome}} - {{item.idade}} anos</li>
 </ul>
@@ -21,7 +21,7 @@
 <button (click)= "onClickAdd()">Adicionar</button> 
 
 <hr>
-<h2>Switch</h2>
+<h2>ngSwitch</h2>
 
 <input type="text" [(ngModel)] = "nome">
 

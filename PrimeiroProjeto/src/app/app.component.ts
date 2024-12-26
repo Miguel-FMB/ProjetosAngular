@@ -6,6 +6,14 @@ import { AfterContentChecked, AfterContentInit, AfterViewChecked, AfterViewInit,
   `<router-outlet></router-outlet>
   <app-data-binding></app-data-binding>
   <app-diretivas-estruturais></app-diretivas-estruturais>
+  
+  <app-diretivas-atributos>
+    <h1>Inicio da aula de Diretivas-Atributos (ng-content)</h1>
+    <hr>
+  </app-diretivas-atributos>
+
+  <app-header></app-header>
+
   `
 })
 
