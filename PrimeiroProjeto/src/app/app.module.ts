@@ -17,7 +17,7 @@ import { SharedModule } from './shared/shared.module';
     TitleComponent,
     DataBindingComponent,
     DiretivasEstruturaisComponent,
-    DiretivasAtributosComponent
+    DiretivasAtributosComponent,
   ],
   imports: [
     BrowserModule,
@@ -26,7 +26,8 @@ import { SharedModule } from './shared/shared.module';
     CommonModule,
     SharedModule
   ],
-  providers: [],
+  providers: [
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

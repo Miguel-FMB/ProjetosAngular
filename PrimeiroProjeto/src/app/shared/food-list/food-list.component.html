@@ -1,0 +1,8 @@
+<li *ngFor = "let item of foodList">
+    {{item}}
+</li>
+
+<input #inputValue>
+<button (click) = "addItem(inputValue.value)">Adicionar</button>
+
+
